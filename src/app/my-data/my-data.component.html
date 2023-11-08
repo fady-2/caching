@@ -1,0 +1,14 @@
+
+<button (click)="clearCacheing('data-entries')">delete cache entries</button>
+
+<h1>data-shibe</h1>
+<hr>
+<ng-container *ngFor="let item of data">
+    <img [src]="item" width="50px" height="50px">
+</ng-container>
+
+<h1>data-entries</h1>
+<hr>
+<ng-container *ngFor="let item of entries">
+    <h5>Category :  {{item?.Category}}</h5>
+</ng-container>
